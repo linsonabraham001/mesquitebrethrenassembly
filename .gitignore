@@ -1,0 +1,13 @@
+# Local tooling / working notes — not part of the published site
+.claude/
+memory/
+MIGRATION.md
+
+# Raw original photos — already copied into the filenames the site uses
+# (hero-*.jpg, about-*.jpg, gallery-*.jpg)
+images/1.jpg
+images/2.jpg
+images/3.jpg
+images/4.jpg
+images/5.jpg
+images/6.jpg
