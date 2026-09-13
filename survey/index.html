@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Living Bread — A Quick Survey | Mesquite Brethren Assembly</title>
+<meta name="description" content="Thanks for stopping by our Free Food Drive-Thru. A few quick questions from Mesquite Brethren Assembly.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" href="../images/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <div class="brand">Mesquite Brethren Assembly<small>3730 O'Hare Dr, Mesquite, TX</small></div>
+  </nav>
+</header>
+
+<section class="survey-hero">
+  <div class="wrap prose">
+    <div class="verse-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 3c-3 0-5.5 2-5.5 5 0 1 .3 1.8.8 2.6C5.8 11.3 4 13.4 4 16c0 2.8 3.6 5 8 5s8-2.2 8-5c0-2.6-1.8-4.7-3.3-5.4.5-.8.8-1.6.8-2.6 0-3-2.5-5-5.5-5z"/>
+        <path d="M9 13.5c1-.6 5-.6 6 0" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <p class="eyebrow-free-label" style="text-align:center;">Free Food Drive-Thru Follow-Up</p>
+    <h1 style="text-align:center;">Thanks for Stopping By!</h1>
+    <p style="text-align:center;">Thank you for taking a moment to scan this code after picking up your food kit today. We're so glad you came by, and we'd love to hear from you.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap prose">
+    <p>Every person has basic needs — food, safety, connection, and care. Meeting those needs, even in a small way like today's food drive, is one way we try to love our neighbors well.</p>
+    <p>But food satisfies hunger only for a little while. Jesus once said, <em>"I am the bread of life; whoever comes to me will never go hungry, and whoever believes in me will never be thirsty"</em> (John 6:35). We believe there's a deeper need in every one of us that only He can truly satisfy.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap prose">
+    <h2 style="text-align:center;">A Few Quick Questions</h2>
+    <p style="text-align:center;">It'll only take a minute — thank you!</p>
+
+    <form id="surveyForm" class="survey-form">
+
+      <div class="survey-question">
+        <label class="survey-question-label">1. How helpful was the food kit you received today?</label>
+        <div class="scale-row" role="radiogroup" aria-label="Helpfulness rating">
+          <label class="scale-option"><input type="radio" name="helpfulness" value="1" required><span>1</span></label>
+          <label class="scale-option"><input type="radio" name="helpfulness" value="2"><span>2</span></label>
+          <label class="scale-option"><input type="radio" name="helpfulness" value="3"><span>3</span></label>
+          <label class="scale-option"><input type="radio" name="helpfulness" value="4"><span>4</span></label>
+          <label class="scale-option"><input type="radio" name="helpfulness" value="5"><span>5</span></label>
+        </div>
+        <div class="scale-endpoints"><span>Not helpful</span><span>Extremely helpful</span></div>
+      </div>
+
+      <div class="survey-question">
+        <label class="survey-question-label" for="needs">2. Besides food, what do you think are the biggest needs people have?</label>
+        <input type="text" id="needs" name="needs" placeholder="e.g. love, peace, purpose, hope...">
+      </div>
+
+      <div class="survey-question">
+        <label class="survey-question-label">3. Would you like us to pray for you about anything?</label>
+        <div class="yesno-row" role="radiogroup" aria-label="Prayer request">
+          <label class="yesno-option"><input type="radio" name="prayer_wanted" value="yes" required data-reveals="prayerDetail"><span>Yes</span></label>
+          <label class="yesno-option"><input type="radio" name="prayer_wanted" value="no" data-reveals="prayerDetail"><span>No</span></label>
+        </div>
+        <div class="conditional-block" id="prayerDetail" hidden>
+          <label class="survey-question-label" for="prayer_request">What would you like us to pray for?</label>
+          <textarea id="prayer_request" name="prayer_request" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="survey-question">
+        <label class="survey-question-label">4. Are you open to learning more about hope, purpose, and faith in life? Click yes to attend a short meeting at Mesquite Brethren Assembly and win prizes.</label>
+        <div class="yesno-row" role="radiogroup" aria-label="Interest in learning more">
+          <label class="yesno-option"><input type="radio" name="open_to_learn" value="yes" required data-reveals="contactDetail"><span>Yes</span></label>
+          <label class="yesno-option"><input type="radio" name="open_to_learn" value="no" data-reveals="contactDetail"><span>No</span></label>
+        </div>
+
+        <div class="conditional-block" id="contactDetail" hidden>
+          <p class="lucky-draw-note">
+            Great! Please leave your contact info below. You'll also be entered into our
+            <strong>lucky draw</strong> — winners will be announced and prizes given out at our
+            upcoming gospel meeting, themed <strong>"Living Bread,"</strong> on
+            <strong>Saturday, October 3, 5:00–6:00 PM at Mesquite Brethren Assembly</strong>. We'll be in touch with more details soon!
+          </p>
+          <label class="survey-question-label" for="contact_name">Your name</label>
+          <input type="text" id="contact_name" name="contact_name">
+
+          <label class="survey-question-label" for="contact_phone">Phone number</label>
+          <input type="tel" id="contact_phone" name="contact_phone">
+
+          <label class="survey-question-label" for="contact_email">Email (optional)</label>
+          <input type="email" id="contact_email" name="contact_email">
+        </div>
+      </div>
+
+      <button class="btn" type="submit" id="surveySubmit">Submit</button>
+      <p class="form-note" id="surveyStatus" role="status"></p>
+    </form>
+
+    <div id="surveyThanks" class="survey-thanks" hidden>
+      <h2>Thank You!</h2>
+      <p>Your response has been received. We appreciate you taking the time — and we hope to see you at the gospel meeting!</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong>Address</strong><br>
+      3730 O'Hare Dr<br>
+      Mesquite, TX 75150
+    </div>
+    <div>
+      <strong>Mesquite Brethren Assembly</strong>
+    </div>
+  </div>
+  <div class="fine">&copy; <span id="year"></span> Mesquite Brethren Assembly</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="../script.js?v=20260913c"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upcoming Events — Mesquite Brethren Assembly</title>
+<meta name="description" content="Upcoming events and flyers from Mesquite Brethren Assembly, Mesquite, TX.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <div class="brand">Mesquite Brethren Assembly<small>3730 O'Hare Dr, Mesquite, TX</small></div>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="index.html#gallery">Gallery</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero hero-page">
+  <div class="hero-bg" id="heroBg">
+    <div class="hero-bg-layer active" style="background-image: url('images/hero-1.jpg');"></div>
+    <div class="hero-bg-layer" style="background-image: url('images/hero-2.jpg');"></div>
+  </div>
+  <div class="hero-inner">
+    <h1>Upcoming Events</h1>
+  </div>
+  <div class="hero-divider" aria-hidden="true">
+    <svg viewBox="0 0 1000 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M737.9,94.7L0,0v100h1000V0L737.9,94.7z"/>
+    </svg>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div id="eventsGrid" class="events-grid"></div>
+    <p id="eventsEmpty" class="events-empty" hidden>No upcoming events right now — check back soon.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong>Address</strong><br>
+      3730 O'Hare Dr<br>
+      Mesquite, TX 75150
+    </div>
+    <div>
+      <strong>Mesquite Brethren Assembly</strong>
+    </div>
+  </div>
+  <div class="fine">&copy; <span id="year"></span> Mesquite Brethren Assembly</div>
+</footer>
+
+<script src="script.js?v=20260913c"></script>
+</body>
+</html>
