@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../styles.css?v=20260921e">
 </head>
 <body>
 
@@ -80,7 +80,7 @@
       </div>
 
       <div class="survey-question">
-        <label class="survey-question-label">4. Are you open to learning more about hope, purpose, and faith in life? Click yes to attend a short meeting at Mesquite Brethren Assembly and win prizes.</label>
+        <label class="survey-question-label">4. Are you open to learning more about hope, purpose, and faith in life? Click yes to attend a short presentation at Mesquite Brethren Assembly and win prizes.</label>
         <div class="yesno-row" role="radiogroup" aria-label="Interest in learning more">
           <label class="yesno-option"><input type="radio" name="open_to_learn" value="yes" required data-reveals="contactDetail"><span>Yes</span></label>
           <label class="yesno-option"><input type="radio" name="open_to_learn" value="no" data-reveals="contactDetail"><span>No</span></label>
@@ -88,11 +88,39 @@
 
         <div class="conditional-block" id="contactDetail" hidden>
           <p class="lucky-draw-note">
-            Great! Please leave your contact info below. You'll also be entered into our
-            <strong>lucky draw</strong> — winners will be announced and prizes given out at our
-            upcoming gospel meeting, themed <strong>"Living Bread,"</strong> on
-            <strong>Saturday, October 3, 5:00–6:00 PM at Mesquite Brethren Assembly</strong>. We'll be in touch with more details soon!
+            Great! Please leave your contact info below — you'll also be entered into our
+            <strong>Scan &amp; Win Contest</strong>.
           </p>
+
+          <div class="prize-board">
+            <p class="prize-board-title">Scan &amp; Win Contest Prizes</p>
+            <div class="prize-tiers">
+              <div class="prize-tier prize-tier-1">
+                <span class="prize-place">1st Place</span>
+                <span class="prize-amount">$150</span>
+                <span class="prize-type">Gift Card</span>
+              </div>
+              <div class="prize-tier prize-tier-2">
+                <span class="prize-place">2nd Place</span>
+                <span class="prize-amount">$100</span>
+                <span class="prize-type">Gift Card</span>
+              </div>
+              <div class="prize-tier prize-tier-3">
+                <span class="prize-place">3rd Place</span>
+                <span class="prize-amount">$50</span>
+                <span class="prize-type">Gift Card</span>
+              </div>
+            </div>
+            <p class="prize-board-note">Plus additional gift cards for more winners!</p>
+          </div>
+
+          <p class="lucky-draw-note">
+            Winners will be announced and prizes given out at our upcoming event at
+            <strong>Mesquite Brethren Assembly</strong> on
+            <strong>Sunday, October 4, 2:30–3:30 PM</strong>.
+            We'll be in touch with more details soon!
+          </p>
+
           <label class="survey-question-label" for="contact_name">Your name</label>
           <input type="text" id="contact_name" name="contact_name">
 
@@ -110,7 +138,7 @@
 
     <div id="surveyThanks" class="survey-thanks" hidden>
       <h2>Thank You!</h2>
-      <p>Your response has been received. We appreciate you taking the time — and we hope to see you at the gospel meeting!</p>
+      <p>Your response has been received. We appreciate you taking the time — and we hope to see you at the upcoming event at Mesquite Brethren Assembly!</p>
     </div>
   </div>
 </section>
@@ -127,6 +155,16 @@
     </div>
   </div>
   <div class="fine">&copy; <span id="year"></span> Mesquite Brethren Assembly</div>
+  <p class="survey-disclaimer">
+    <strong>Scan &amp; Win Contest Official Rules:</strong> No purchase necessary.
+    Open to survey participants who provide contact information above; one entry
+    per person. Winners will be chosen at random and notified using the contact
+    information provided. Winners must be present at the event to receive their
+    prize. Prizes are gift cards as described above and are not redeemable for
+    cash, credit, or substitute prizes. Void where prohibited by law. By submitting
+    this form, you consent to Mesquite Brethren Assembly contacting you about this
+    survey, the Scan &amp; Win Contest, and the upcoming event.
+  </p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>

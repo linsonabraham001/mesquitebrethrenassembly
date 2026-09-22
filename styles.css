@@ -652,6 +652,94 @@ footer .fine {
 
 .lucky-draw-note strong { color: var(--gold); }
 
+.prize-board {
+  margin-top: 16px;
+  padding: 20px 16px 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--alt-line);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.prize-board-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.8rem;
+  color: var(--gold);
+  margin: 0 0 16px;
+}
+
+.prize-tiers {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.prize-tier {
+  flex: 1 1 100px;
+  max-width: 140px;
+  border-radius: 10px;
+  padding: 14px 8px;
+  border: 1px solid var(--alt-line);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.prize-place {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--alt-text-soft);
+  margin-bottom: 6px;
+}
+
+.prize-amount {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.prize-type {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--alt-text-soft);
+  margin-top: 2px;
+}
+
+.prize-tier-1 { border-color: rgba(227, 179, 79, 0.5); }
+.prize-tier-1 .prize-amount { color: var(--gold); }
+
+.prize-tier-2 { border-color: rgba(203, 213, 225, 0.4); }
+.prize-tier-2 .prize-amount { color: #cbd5e1; }
+
+.prize-tier-3 { border-color: rgba(205, 127, 50, 0.4); }
+.prize-tier-3 .prize-amount { color: #cd8a5a; }
+
+.prize-board-note {
+  margin: 18px 0 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.01em;
+}
+
+.survey-disclaimer {
+  max-width: var(--max);
+  margin: 14px auto 0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #8892a8;
+  text-align: center;
+}
+
+.survey-disclaimer strong {
+  font-size: inherit;
+  color: var(--gold);
+}
+
 .survey-thanks {
   max-width: var(--max);
   margin: 0 auto;
