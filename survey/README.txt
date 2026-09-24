@@ -21,6 +21,7 @@ server needed.
      {{prayer_request}}   - prayer request detail (blank if prayer_wanted=no)
      {{open_to_learn}}    - "yes" or "no"
      {{contact_name}}     - only filled if open_to_learn=yes
+     {{attendees}}        - number of people planning to attend (open_to_learn=yes)
      {{contact_phone}}    - only filled if open_to_learn=yes
      {{contact_email}}    - only filled if open_to_learn=yes
    Save the template and note its TEMPLATE ID (looks like "template_xyz789").

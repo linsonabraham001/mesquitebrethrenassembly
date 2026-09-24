@@ -435,8 +435,10 @@ form.contact-form button { margin-top: 22px; }
 /* Events */
 .events-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 32px;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  max-width: 640px;
+  margin: 0 auto;
   padding: 40px 0;
 }
 
@@ -554,6 +556,7 @@ footer .fine {
 .survey-form input[type="text"],
 .survey-form input[type="email"],
 .survey-form input[type="tel"],
+.survey-form input[type="number"],
 .survey-form textarea {
   width: 100%;
   border: 1px solid var(--line);
